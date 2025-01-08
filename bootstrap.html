@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon World</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS variables for theme colors */
+        :root {
+            --purple: #5D3FD3;
+            --gold: #FFD700;
+        }
+        body {
+            background-color: #f8f9fa;
+        }
+        /* Custom background and text color classes */
+        .bg-purple {
+            background-color: var(--purple) !important;
+        }
+        .bg-gold {
+            background-color: var(--gold) !important;
+        }
+        .text-purple {
+            color: var(--purple) !important;
+        }
+        .text-gold {
+            color: var(--gold) !important;
+        }
+        /* Custom button styles */
+        .btn-purple {
+            background-color: var(--purple);
+            border-color: var(--purple);
+            color: white;
+        }
+        .btn-purple:hover {
+            background-color: #4B2E9E;
+            border-color: #4B2E9E;
+            color: var(--gold);
+        }
+        /* Card hover effect */
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        /* Custom navbar styles */
+        .navbar-custom {
+            background-color: var(--purple);
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: var(--gold);
+        }
+        .navbar-custom .nav-link:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-purple text-gold text-center py-4">
+        <h1 class="display-4">Pokemon World</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pokemon World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="text-center bg-light py-5">
+            <h2 class="text-purple mb-4">Welcome to the Pokemon World!</h2>
+            <p class="lead text-purple">Discover your favorite Pokemon and explore their abilities.</p>
+            <button class="btn btn-purple btn-lg">Get Started</button>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="my-5">
+            <div class="container">
+                <h3 class="text-center mb-4 text-purple">Pokemon Gallery</h3>
+                <div class="row g-4">
+                    <!-- Pikachu Card -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" class="card-img-top" alt="Pikachu">
+                            <div class="card-body">
+                                <h5 class="card-title text-purple">Pikachu</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Electric</h6>
+                                <p class="card-text">Known for its lightning-fast attacks and cute appearance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Charizard Card -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" class="card-img-top" alt="Charizard">
+                            <div class="card-body">
+                                <h5 class="card-title text-purple">Charizard</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Fire/Flying</h6>
+                                <p class="card-text">Powerful fire-breathing dragon-like Pokemon.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bulbasaur Card -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" class="card-img-top" alt="Bulbasaur">
+                            <div class="card-body">
+                                <h5 class="card-title text-purple">Bulbasaur</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Grass/Poison</h6>
+                                <p class="card-text">Plant-based Pokemon with a variety of status-affecting moves.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Squirtle Card -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" class="card-img-top" alt="Squirtle">
+                            <div class="card-body">
+                                <h5 class="card-title text-purple">Squirtle</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Water</h6>
+                                <p class="card-text">Turtle-like Pokemon that can shoot water from its mouth.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mewtwo Card -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png" class="card-img-top" alt="Mewtwo">
+                            <div class="card-body">
+                                <h5 class="card-title text-purple">Mewtwo</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Psychic</h6>
+                                <p class="card-text">Genetically engineered Pokemon with immense psychic power.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Eevee Card -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png" class="card-img-top" alt="Eevee">
+                            <div class="card-body">
+                                <h5 class="card-title text-purple">Eevee</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Normal</h6>
+                                <p class="card-text">Unique Pokemon with multiple evolution possibilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gyarados Card -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/130.png" class="card-img-top" alt="Gyarados">
+                            <div class="card-body">
+                                <h5 class="card-title text-purple">Gyarados</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Water/Flying</h6>
+                                <p class="card-text">Fierce and powerful Pokemon known for its dragon-like appearance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gengar Card -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png" class="card-img-top" alt="Gengar">
+                            <div class="card-body">
+                                <h5 class="card-title text-purple">Gengar</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Ghost/Poison</h6>
+                                <p class="card-text">Mischievous ghost Pokemon with the ability to hide in shadows.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <h3 class="text-center mb-4 text-purple">About Pokemon World</h3>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card bg-purple text-gold h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Our Mission</h5>
+                                <p class="card-text">To create a comprehensive database of all Pokemon and their abilities, accessible to trainers worldwide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-gold text-purple h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Pokemon Types</h5>
+                                <p class="card-text">Explore the 18 different Pokemon types, each with unique strengths and weaknesses.</p>
+                                <ul class="list-unstyled">
+                                    <li>Fire, Water, Grass</li>
+                                    <li>Electric, Psychic, Dark</li>
+                                    <li>Dragon, Fairy, Steel</li>
+                                    <li>And many more!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-gold text-purple h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Become a Trainer</h5>
+                                <p class="card-text">Learn how to catch, train, and battle with your own Pokemon team.</p>
+                                <ol>
+                                    <li>Choose your starter Pokemon</li>
+                                    <li>Explore various regions</li>
+                                    <li>Catch wild Pokemon</li>
+                                    <li>Train and evolve your team</li>
+                                    <li>Challenge Gym Leaders</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-purple text-gold h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Pokemon Regions</h5>
+                                <p class="card-text">Discover the various regions of the Pokemon world, each with its own unique Pokemon and challenges.</p>
+                                <ul class="list-unstyled">
+                                    <li>Kanto - The classic region</li>
+                                    <li>Johto - Home of legendary beasts</li>
+                                    <li>Hoenn - Land of water and earth</li>
+                                    <li>Sinnoh - Mythical and powerful Pokemon</li>
+                                    <li>And many more to explore!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-purple text-gold">
+        <p>© 2024 Pokemon World. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
